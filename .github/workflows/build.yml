@@ -1,20 +1,25 @@
+
+name: Node Continuous Integration
 on: push
 
 jobs: 
-  first-job:
-    name: Job 1
+  build-node-ubuntu:
+    name: Builld Node - Ubuntu
     runs-on: ubuntu-latest
-    container: node:17.6.0
+    
     steps:
       - run: node --version
       - run: npm --version
+      - uses: actions/checkout@v4
+      - run: dir
 
-  second-job:
-    name: Job 2
+  build-node-windows:
+    name: Build node - Windows
     runs-on: windows-latest
-    container: node:17.6.0
     steps:
       - run: node --version
       - run: npm --version
+      - uses: actions/checkout@v4
+      - run: dir
           
       
