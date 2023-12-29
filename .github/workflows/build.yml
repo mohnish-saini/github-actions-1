@@ -4,6 +4,7 @@ jobs:
   first-job:
     name: Job 1
     runs-on: ubuntu-latest
+    container: node:17.6.0
     steps:
       - run: node --version
       - run: npm --version
@@ -11,6 +12,7 @@ jobs:
   second-job:
     name: Job 2
     runs-on: windows-latest
+    container: node:17.6.0
     steps:
       - run: node --version
       - run: npm --version
