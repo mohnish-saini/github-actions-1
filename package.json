@@ -1,8 +1,8 @@
 {
     "name": "simple",
     "description": "description",
-    "authors": "author",
+    "authors": "Mohnish Saini",
     "version": "1.0.0",
     "main": "app.js",
-    "dependencies": {}
+    "dependencies": {"moment": "latest"}
 }

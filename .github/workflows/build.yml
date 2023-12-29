@@ -6,22 +6,33 @@ jobs:
   build-node-ubuntu:
     name: Builld Node - Ubuntu
     runs-on: ubuntu-latest
-    
     steps:
       - run: node --version
+        name: Check Node Version
       - run: npm --version
+        name: Check NPM Version
       - uses: actions/checkout@v4
+        name: Checkout Code
       - run: dir
+        name: List Dir/Files
       - run: npm install
+        name: Install NPM Packages
       - run: node app.js
+        name: Run Application
 
   build-node-windows:
-    name: Build node - Windows
+    name: Build Node - Windows
     runs-on: windows-latest
     steps:
       - run: node --version
+        name: Check Node Version
       - run: npm --version
+        name: Check NPM Version
       - uses: actions/checkout@v4
+        name: Checkout Code
       - run: dir
+        name: List Dir/Files
       - run: npm install
+        name: Install NPM Packages
       - run: node app.js
+        name: Run Application
